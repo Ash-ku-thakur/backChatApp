@@ -8,7 +8,7 @@ let server = http.createServer(app);
 
 let io = new Server(server, {
   cors: {
-    origin: [""],
+    origin: ["*"],
     methods: ["GET", "POST"],
   },
 });
