@@ -7,6 +7,9 @@ import massageRouter from "./routes/massageRouter.js";
 import databaseConnection from "./utils/database.js";
 import { app, server } from "./socket/socket.js";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 dotenv.config({});
 
